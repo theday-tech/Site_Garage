@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="contents">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Le GARAGE AI</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "poppins";
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: #fff; 
+            
+        }
+        
+        .wrapper{
+            width: 90%;
+            margin: 0 auto;
+            
+              position: absolute;
+              top: 20px; /* Ajustez la position verticale du bouton */
+              left: 20px; /* Ajustez la position horizontale du bouton */
+              z-index: 9999; /* Pour s'assurer que le bouton est au-dessus du contenu */
+        }
+        
+        .container{
+            float: right;
+            height: 25px;
+            width: 40px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .menulogo{
+            height: 4px;
+            width: 30px;
+            margin-right: -100px;    
+            background-color: #fff;
+            border-radius: 3px;
+        }
+        
+        .menu{
+            width: 50%;
+            height: 100vh;
+            background-color: #78A2CC;
+            padding: 50px;
+            transform: translateX(-500px);
+            transition: 0.5s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        
+        .menu li{
+            list-style-type: none;
+            border-bottom: 1px solid #97c2ed;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .showmenu{
+            transform: translateX(0);
+        }
+        
+        .menu li a:last-child{
+            border-bottom: none;
+        }
+        
+        .menu li:first-child a{
+            font-weight: bold;
+        }
+        
+        .menu li a{
+            color: snow;
+            text-decoration: none;
+            font-size: 20px;
+            transition: font-weight 0.2s;
+        }
+        
+        .menu li a:hover{
+            font-weight: bold;
+        }
+        
+        .containe {
+          background-color: #78A2CC;
+          filter: brightness(90%);
+          position: relative;
+          text-align: center;
+          height: 100vh; /* Hauteur de la section pour couvrir l'écran */
+          background-image: url('asset/bg.webp'); /* URL relative */
+          background-size: 100vw;
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: x-large;
+          background-color: #87CEFA; /* Couleur de fond bleu ciel */
+        }
+        
+        
+        button{
+          width: 200px;
+          padding: 15px 0;
+          text-align: center;
+          top: 10px;
+          margin: 20px 10px;
+          border-radius: 25px;
+          font-weight: bold;
+          border: 2px solid #fff/*rgb(120,162,204)*/;
+          background: transparent;
+          color: #fff;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          color: #000000;
+          border-color: #000000;
+      }
+      
+      span{
+          background:  linear-gradient(97.72deg, #78A2CC 7.88%, #000000 133.86%);;
+          height: 100%;
+          width: 0;
+          border-radius: 25px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          z-index: -1;
+          transition: 0.5s;
+          color: #000000;
+      }
+      
+      button:hover span{
+         width: 100%; 
+      }
+      button:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+      
+        h1 {
+          /*padding-bottom: -50px;*/
+          font-size: 55px; /* Taille de police du titre */
+          margin-bottom: 20px; /* Espace entre le titre et le paragraphe */
+          font-family: 'DM Sans', sans-serif;
+          font-weight: bold;
+          color: #000000de;
+        }
+
+        .sponsors{
+           display: flex;
+           text-align: center;
+           justify-content: space-between;
+           margin-left: 20px;
+           position: absolute;
+           top:85%;
+           margin-right: 40px;
+        }
+        .sponsors img{
+            width: 15%;
+            
+        }
+
+        @media screen and (min-width: 1000px) {
+            .menu{
+                width: 500px;
+            }
+        }
+        
+        @media screen and (max-width:1000px){
+            .menu li a{
+                font-size: 16px;
+            }    
+
+            .menulogo{
+                margin-right: 20px;
+            }
+
+            .logo{
+                width: 30%;
+            }
+
+            .sponsors{
+                margin: 20px;
+                height: auto;
+            }
+
+            
+        }
+    </style>
+</head>
+<body> 
+    
+    <div class="wrapper">
+        <a href=""></a>
+      <img width="200px" src="asset/logo.png" alt="Votre logo" class="logo">
+        <div class="container">
+            <div class="menulogo"></div>
+            <div class="menulogo"></div>
+            <div class="menulogo"></div>
+        </div>
+    </div>
+    <ul class="menu">
+        <li> <a href="./index_acceuil.html">Accueil</a></li>
+        <li> <a href="./A_propos.html">A propos</a></li>
+        <li> <a href="./Nos_services.html">Nos services</a></li>
+        <li> <a href="./Nos_projets.html">Nos projets</a></li>
+        
+    </ul>
+    
+  <div class="containe">
+    <h1>Là où votre vision du futur se matérialise </h1>
+    <!-- <h3 >Powered by FuturAfric</h3>
+    <p >Là où votre vision du futur se matérialise</p> -->
+    <a href="./A_propos.html">
+        <button type="button"> <span></span> En savoir plus</button>
+    </a>
+    
+    </div>
+  </div>
+  <div class="sponsors">
+        <img src="asset/GDC_Cloud.png" alt="">
+        <img src="asset/GDC_Cocody.png" alt="">
+        <img src="asset/Tensorflow_Abidjan.png" alt="">
+  </div>
+
+
+    <script>
+        var logo=document.querySelector('.container');
+        var menu = document.querySelector('.menu');
+
+        logo.addEventListener('click', function(){
+            menu.classList.toggle('showmenu')
+        });
+
+    </script>
+
+</body>
+</html>    

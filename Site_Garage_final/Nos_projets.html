@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE GARAGE AI</title>
+   
+    <link rel="stylesheet" href="./style_Nos_Projets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Condensed&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+</head>
+<body>
+            <a class="logo" href="./index_acceuil.html"><img src="asset/logo.png" class="logo"></a>
+        <div class="wrapper">
+            
+
+                <div class="container">
+                    <div class="menulogo"></div>
+                    <div class="menulogo"></div>
+                    <div class="menulogo"></div>
+                </div>
+        </div>
+            <ul class="menu">
+                <li> <a href="./index_acceuil.html">Accueil</a></li>
+                <li> <a href="./A_propos.html">A propos</a></li>
+                <li> <a href="./Nos_projets.html">Nos projets</a></li>
+                <li> <a href="./Nos_services.html">Nos services</a></li>
+            </ul>
+
+    <h2 class="title" >Nos projets</h2>
+    <p> Le GARAGE AI vous propose des solutions qui répondent à vos besoins</p>
+    <section class="sect2">
+     <div class="img1">
+        <img src="./asset/concept-collage-reconnaissance-faciale.jpg" alt="" class="image1" >
+     </div>
+     <div class="recognition"> 
+        <h2>AI RECOGNITION</h2>
+      <p>
+        Prédire votre émotion, votre age et <br>
+        même votre nom avec seulement une image ou une <br>
+        émotion, c’est possible ! 
+      </p> 
+      <a href=""><p class="Test">Je teste</p></a>
+     </div> 
+    </section>
+
+    <section class="sect3">
+        
+        <div class="matching"> 
+           <h2>CV MATCHING</h2>
+         <p>
+            Employeur, trouver le bon cv pour votre fiche de poste. <br>
+            Chercheur d’emploi, déposer votre cv et récever un score ainsi qu’une<br> recommandation  pour vous améliorer.            
+         </p> 
+         <a href=""><p class="Test2">Je teste</p></a>
+        </div>
+
+        <div>
+            <img src="./asset/reprendre-concept-formulaire-emploi-demande.jpg" alt="" class="image2">
+        </div> 
+        
+    </section>
+    
+    <footer>
+        <img width="200px" style="margin:10px" src="./asset/logo.png" alt="logo garage">
+        <div class="contenu-footer">
+            <div class="bloc footer-contact">
+                <ul class="liste-services">
+                    <li><a href="#"><i class="fa-regular fa-envelope fa-lg"></i>  info@legarage.com</a></li>
+                    <li><a href="#"><i id="aa" class="fa-sharp fa-solid fa-location-dot fa-lg"></i>  Riviera Bonoumin, Abidjan,Cote d'Ivoire</a></li>
+                </ul>
+            </div>
+            <div class="bloc1 footer-social">
+                <ul class="liste-social">
+                    <li><a href="linkdin"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></li>
+                    <li><a href="twitter"><i class="fa-brands fa-square-twitter fa-lg" style="color: #ffffff;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        var logo=document.querySelector('.container');
+        var menu = document.querySelector('.menu');
+
+    logo.addEventListener('click', function(){
+    menu.classList.toggle('showmenu')
+});
+    </script>
+</body>
+</html>
